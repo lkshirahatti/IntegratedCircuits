@@ -1,1 +1,24 @@
 ### Material for SPICE simulation of Diode 
+
+### Spice Model of 1N4148 Diode 
+.model D1N4148  D(Is=5.84n N=1.94 Rs=.7017 Ikf=44.17m Xti=3 Eg=1.11 Cjo=.95p M=.55 Vj=.75 Fc=.5 Isr=11.07n Nr=2.088 Bv=100 Ibv=100u Tt=11.07n) 
+
+| Parameter | Value    | Meaning / Role                                                                                                        |
+| --------- | -------- | --------------------------------------------------------------------------------------------------------------------- |
+| `Is`      | 5.84n A  | **Saturation current** – defines leakage current in reverse bias; controls exponential I–V curve in forward bias.     |
+| `N`       | 1.94     | **Emission coefficient** – ideality factor. For silicon diodes, usually \~1–2. Influences forward voltage drop shape. |
+| `Rs`      | 0.7017 Ω | **Series resistance** – models internal resistance due to bulk material; affects forward I–V at higher currents.      |
+| `Ikf`     | 44.17m A | **High-level injection coefficient** – sets the forward current level at which β starts to degrade.                   |
+| `Xti`     | 3        | **Temperature exponent for Is** – defines how `Is` varies with temperature.                                           |
+| `Eg`      | 1.11 eV  | **Energy gap** – bandgap of silicon; affects temperature behavior.                                                    |
+| `Cjo`     | 0.95p F  | **Zero-bias junction capacitance** – parasitic capacitance at 0 V reverse bias.                                       |
+| `M`       | 0.55     | **Grading coefficient** – defines how junction capacitance changes with reverse voltage.                              |
+| `Vj`      | 0.75 V   | **Junction potential** – built-in potential of PN junction; used in capacitance equation.                             |
+| `Fc`      | 0.5      | **Forward-bias depletion capacitance coefficient** – defines transition from depletion to diffusion capacitance.      |
+| `Isr`     | 11.07n A | **Recombination saturation current** – affects reverse recovery behavior.                                             |
+| `Nr`      | 2.088    | **Emission coefficient for recombination current** – typically higher than `N`; shapes reverse current.               |
+| `Bv`      | 100 V    | **Reverse breakdown voltage** – VRRM; max safe reverse voltage. Beyond this, diode avalanches.                        |
+| `Ibv`     | 100u A   | **Reverse breakdown current** – reverse current at breakdown voltage; limits slope after breakdown.                   |
+| `Tt`      | 11.07n s | **Transit time** – charge storage; affects reverse recovery time, switching speed in high-frequency applications.     |
+
+
