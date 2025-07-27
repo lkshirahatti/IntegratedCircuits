@@ -22,3 +22,25 @@
 | `Tt`      | 11.07n s | **Transit time** – charge storage; affects reverse recovery time, switching speed in high-frequency applications.     |
 
 
+
+### Datasheet Details 
+
+| **Parameter**                           | **Vishay**       | **SMC Diode Solutions** | **ON Semiconductor**       | **NXP Semiconductors**   | **Diotec**                   |
+| --------------------------------------- | ---------------- | ----------------------- | -------------------------- | ------------------------ | ---------------------------- |
+| **Peak Reverse Voltage (VRRM)**         | 100 V            | 100 V                   | 100 V                      | 100 V                    | 100 V                        |
+| **Working Reverse Voltage (VR)**        | 75 V             | 75 V                    | 75 V                       | 100 V                    | 75 V                         |
+| **Forward Voltage (VF @ 10 mA)**        | ≤ 1.0 V          | ≤ 1.0 V                 | ≤ 1.0 V                    | ≤ 1.0 V                  | ≤ 1.0 V                      |
+| **Reverse Leakage Current (IR @ 20 V)** | ≤ 25 nA          | ≤ 25 nA                 | ≤ 25 nA                    | ≤ 25 nA                  | ≤ 25 nA                      |
+| **Reverse Leakage (IR @ 20 V, 150 °C)** | ≤ 50 µA          | ≤ 50 µA                 | ≤ 50 µA                    | ≤ 50 µA                  | ≤ 50 µA                      |
+| **Reverse Recovery Time (trr)**         | 4–8 ns           | ≤ 4 ns                  | ≤ 4 ns                     | ≤ 4 ns                   | < 4 ns                       |
+| **Capacitance (Cd or Cj @ 1 MHz)**      | 4 pF             | ≤ 4 pF                  | 4 pF                       | ≤ 4 pF                   | typ. 4 pF                    |
+| **Max Forward Current (IF)**            | 300 mA           | 300 mA                  | 300 mA                     | 200 mA                   | 200 mA                       |
+| **Average Forward Current (IF(AV))**    | 150 mA           | 150 mA                  | 200 mA                     | 200 mA                   | 200 mA                       |
+| **Peak Surge Forward Current (IFSM)**   | 2 A (1 µs pulse) | 2 A (1 µs)              | 4 A (1 µs)                 | 4 A (1 µs)               | 4 A (1 µs)                   |
+| **Power Dissipation (Ptot)**            | 500 mW           | 500 mW                  | 500 mW                     | 500 mW                   | 500 mW                       |
+| **Thermal Resistance (RθJA)**           | 350 K/W          | 300 °C/W                | 300 °C/W                   | 350 K/W                  | < 300 K/W                    |
+| **Junction Temperature (Tj max)**       | 175 °C           | 175 °C                  | 175 °C                     | 200 °C                   | 175 °C                       |
+| **Package**                             | DO-35            | DO-35                   | DO-204AH (DO-35)           | DO-35 (SOD27)            | DO-35 / SOD-27               |
+| **Weight (typical)**                    | \~105 mg         | \~130 mg                | \~137 mg                   | Not specified            | \~100 mg                     |
+| **Compliance / Notes**                  | RoHS, JEDEC      | Pb-Free, Traceable lots | JEDEC, Hermetically sealed | Hermetically sealed, IEC | AEC-Q101 optional (suffixes) |
+
